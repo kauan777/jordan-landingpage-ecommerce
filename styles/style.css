@@ -3,15 +3,73 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-body.background {
   margin: 0;
   padding: 0;
-  background-image: url(../assets/background-home.png);
-  background-repeat: no-repeat;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.37);
   width: 100%;
-  height: 40%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem 1rem 4rem;
+  z-index: 2;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+header nav ul li {
+  color: #fff;
+}
+header nav ul li i {
+  margin-right: 4px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header #logo-jordan {
+  width: 40px;
+  height: 40px;
+}
+
+.home {
+  position: relative;
+  width: 100%;
   overflow-x: hidden;
-  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: red;
+}
+.home .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  top: 0;
+}
+.home #slider {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  z-index: 2;
+}
+.home #slider img {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+}
+.home #slider img.selected {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
